@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.9.1.js'></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script type='text/javascript'> 
+$(window).load(function(){
+
+$(function() {
+    $(".allrest").click(function(){
+        $(".allrestaurants").css("opacity", "1");
+        $(".rest1").css("opacity", "0");
+        $(".rest2").css("opacity", "0");
+        $(".rest3").css("opacity", "0");
+    });
+});
+
+
+$(function() {
+    $(".indian").click(function(){
+        $(".allrestaurants").css("opacity", "0");
+        $(".rest1").css("opacity", "1");
+        $(".rest2").css("opacity", "0");
+        $(".rest3").css("opacity", "0");
+    });
+});
+
+$(function() {
+    $(".chinese").click(function(){
+        $(".allrestaurants").css("opacity", "0");
+        $(".rest1").css("opacity", "0");
+        $(".rest2").css("opacity", "1");
+        $(".rest3").css("opacity", "0");
+    });
+});
+
+$(function() {
+    $(".mexican").click(function(){
+        $(".allrestaurants").css("opacity", "0");
+        $(".rest1").css("opacity", "0");
+        $(".rest2").css("opacity", "0");
+        $(".rest3").css("opacity", "1");
+    });
+});
+
+}); 
+</script>
+</head>
+<body>
+
+<div class="container">
+
+<div class="left">
+ 
+ <button class="allrest">All</button>
+ <div class="divider"></div>
+ <button class="indian">Indian</button>
+ <div class="divider"></div>
+ <button class="chinese">Chinese</button>
+ <div class="divider"></div>
+ <button class="mexican">Mexican</button>
+ <div class="divider"></div>
+
+ </div>
+
+<div class="right">
+
+    <div class="allrestaurants">
+        <div id="panel">
+           <img src="images/indian1.jpg" width="300px" />
+           <div id="paneltext">Some text1</div>
+       </div>
+       <div id="panel">
+           <img src="images/indian2.jpg" width="300px" />
+           <div id="paneltext">Some text2</div>
+       </div>
+       <div id="panel">
+           <img src="images/indian3.jpg" width="300px" />
+           <div id="paneltext">Some text2</div>
+       </div>
+     <div id="panel">
+           <img src="images/chinese1.jpg" width="300px" />
+           <div id="paneltext">Some text1</div>
+       </div>
+       <div id="panel">
+           <img src="images/chinese2.jpg" width="300px" />
+           <div id="paneltext">Some text2</div>
+       </div>
+       <div id="panel">
+           <img src="images/chinese3.jpg" width="300px" />
+           <div id="paneltext">Some text2</div>
+       </div>
+       <div id="panel">
+           <img src="images/mexican1.jpg" width="300px" />
+           <div id="paneltext">Some text1</div>
+       </div>
+       <div id="panel">
+           <img src="images/mexican2.jpg" width="300px" />
+           <div id="paneltext">Some text2</div>
+       </div>
+       <div id="panel">
+           <img src="images/mexican3.jpg" width="300px" />
+           <div id="paneltext">Some text2</div>
+       </div>
+   </div>
+
+   <div class="rest1">
+    <div id="panel">
+        <img src="images/indian1.jpg" width="300px" />
+        <div id="paneltext">Some text1</div>
+    </div>
+    <div id="panel">
+        <img src="images/indian2.jpg" width="300px" />
+        <div id="paneltext">Some text2</div>
+    </div>
+    <div id="panel">
+        <img src="images/indian3.jpg" width="300px" />
+        <div id="paneltext">Some text2</div>
+    </div>
+   </div>
+
+   <div class="rest2">
+    <div id="panel">
+        <img src="images/chinese1.jpg" width="300px" />
+        <div id="paneltext">Some text1</div>
+    </div>
+    <div id="panel">
+        <img src="images/chinese2.jpg" width="300px" />
+        <div id="paneltext">Some text2</div>
+    </div>
+    <div id="panel">
+        <img src="images/chinese3.jpg" width="300px" />
+        <div id="paneltext">Some text2</div>
+    </div>
+   </div>
+
+   <div class="rest3">
+    <div id="panel">
+        <img src="images/mexican1.jpg" width="300px" />
+        <div id="paneltext">Some text1</div>
+    </div>
+    <div id="panel">
+        <img src="images/mexican2.jpg" width="300px" />
+        <div id="paneltext">Some text2</div>
+    </div>
+    <div id="panel">
+        <img src="images/mexican3.jpg" width="300px" />
+        <div id="paneltext">Some text2</div>
+    </div>
+   </div>
+ </div>
+
+</body>
+</html>
