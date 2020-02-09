@@ -7,7 +7,7 @@ body {
 .first {
   width: 50%;
   float: left;
-  //display: inline-block;
+  /*display: inline-block;*/
 
 }
 
@@ -20,7 +20,7 @@ background-image:url(https://unlimitedhealthinstitute.com/wp-content/uploads/201
 .second {
   width: 50%;
   float: right;
-  //display: inline-block;
+  /*display: inline-block;*/
 
 }
 
@@ -75,4 +75,13 @@ h1 {
 .restaurant-map {  
 margin-top: 22%;
 padding: 120px;
+}
+
+iframe{
+  width: 1000px;
+  height: 450px;
+}
+
+.rating{
+  margin-top: 0px;
 }
