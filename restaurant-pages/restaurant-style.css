@@ -39,7 +39,6 @@ background-image:url(https://unlimitedhealthinstitute.com/wp-content/uploads/201
 .restaurant-paragraph-2 {
   padding-bottom: 20px;
   padding-left: 40px;
-  padding-bottom: 20px;
 }
 
 .second h2 {
@@ -50,36 +49,30 @@ h2 {padding-top:30px; padding-bottom:20px;}
 h1 {
   text-align: center
 }
-.first {border-top:#666666 solid 1px;border-bottom:#666666 solid 1px;}
+.first {
+  border-top:#666666 solid 1px;
+  border-bottom:#666666 solid 1px;
+}
+
 .restaurant-banner {
    background-color: rgba(0,0,0,40)
 }
 
 .image-block {
+  display: block;
   width: 100%;
   height: 70px;
-  background: #66232c;
+  background: #f0c030;
   margin-bottom:60px;
 }
 
- @media screen and (max-width: 900px) {
-
-   .image-block {width:100%; height:auto;}
-   .second {
-  width: 100%;
-  float: none;
-  display: block;
-}
-   
-     .first {
-  width: 100%;
-  float: none;
-  display: block;
-
-}
-   
+.image-block p{
+  text-align: center;
+  padding: 0 auto;
+  text-decoration: none;
 }
 
-.review-name {
-  text-align: right;
+.restaurant-map {  
+margin-top: 22%;
+padding: 120px;
 }
