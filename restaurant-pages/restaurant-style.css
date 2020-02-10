@@ -15,7 +15,7 @@ body {
   display:block }
 
 .restaurant-banner {
-background-image:url(https://unlimitedhealthinstitute.com/wp-content/uploads/2017/01/Healthy-Food-Banner-2.jpg); padding-top:160px; padding-bottom:160px; width:100%;}
+background-image:url(../images/gusto-501.jpg); padding-top:160px; padding-bottom:160px; width:100%;}
 
 .second {
   width: 50%;
@@ -84,4 +84,8 @@ iframe{
 
 .rating{
   margin-top: 0px;
+}
+
+.stars p{
+  color: #ffffff;
 }
