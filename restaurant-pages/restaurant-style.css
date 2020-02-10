@@ -1,5 +1,4 @@
 body {
- 
   margin: 0 auto;
   background-color: #fff;
 }
@@ -11,11 +10,128 @@ body {
 
 }
 
-.restaurant-banner img {
+.restaurant-banner-gusto501 img {
   display:block }
 
-.restaurant-banner {
-background-image:url(../images/gusto-501.jpg); padding-top:160px; padding-bottom:160px; width:100%;}
+.restaurant-banner-gusto501 {
+    background-image: url(../images/gusto-501.jpg);
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-gusto501 h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-robosushi img {
+  display:block }
+
+.restaurant-banner-robosushi {
+    background-image: url("../images/robo-sushi.jpg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-robosushi h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-onoir img {
+  display:block }
+
+.restaurant-banner-onoir {
+    background-image: url("../images/onoir.jpg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-onoir h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-mustafa img {
+  display:block }
+
+.restaurant-banner-mustafa {
+    background-image: url("../images/mustafa.jpg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-mustafa h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-fisherman img {
+  display:block }
+
+.restaurant-banner-fisherman {
+    background-image: url("../images/fishman-lobster-clubhouse.jpg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-fisherman h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-barraval img {
+  display:block }
+
+.restaurant-banner-barraval {
+    background-image: url("../images/bar-raval.jpg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-barraval h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-famiglia img {
+  display:block }
+
+.restaurant-banner-famiglia {
+    background-image: url("../images/famiglia-baldassarre.jpeg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-famiglia h1 {
+  color:#ffffff;
+}
+
+.restaurant-banner-360 img {
+  display:block }
+
+.restaurant-banner-360 {
+    background-image: url("../images/360-restaurant.jpg");
+    width: 100%;
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+.restaurant-banner-360 h1 {
+  color:#ffffff;
+}
+
+.image-block {
+  width: 100%;
+  height: 70px;
+  background: #66232c;
+  margin-bottom:60px;
+}
+
+.image-block {
+  text-align: center;
+}
 
 .second {
   width: 50%;
@@ -24,8 +140,6 @@ background-image:url(../images/gusto-501.jpg); padding-top:160px; padding-bottom
 
 }
 
-.restaurant-banner h1 {color:#ffffff;}
- 
 .column-container-2 {
   max-width:1024px; margin:0 auto;
 }
@@ -58,23 +172,11 @@ h1 {
    background-color: rgba(0,0,0,40)
 }
 
-.image-block {
-  display: block;
-  width: 100%;
-  height: 70px;
-  background: #f0c030;
-  margin-bottom:60px;
-}
-
-.image-block p{
-  text-align: center;
-  padding: 0 auto;
-  text-decoration: none;
-}
-
 .restaurant-map {  
-margin-top: 22%;
-padding: 120px;
+  margin-top: 22%;
+  padding: 120px;
+  text-align: center;
+  max-width: 1000px;
 }
 
 iframe{
@@ -89,3 +191,4 @@ iframe{
 .stars p{
   color: #ffffff;
 }
+
