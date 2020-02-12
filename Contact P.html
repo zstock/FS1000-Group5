@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Contact Us</title>
 </head>
 <link rel="stylesheet" href="Contact P.css">
 <body>
@@ -14,66 +14,37 @@
                 <h1 class="form-title">C<span>ontact</span></h1>
             </div>
             <label for="name" class="form-label">Client Name</label>
-            <input type="text" id="name" class="form-input" placeholder="Name:">
+            <input type="text" id="name" class="form-input" placeholder="Name:" onkeyup="validate();">
+            <div id="errName"></div>
 
             <label for="restaurant" class="form-label">Restaurant's Name</label>
-            <input type="text" id="restaurant" class="form-input" placeholder="Name:">
+            <input type="text" id="restaurant" class="form-input" placeholder="Name:" onkeyup="validate();">
+            <div id="errRestaurant"></div>
 
             <label for="address" class="form-label">Restaurant's address</label>
-            <input type="text" id="" class="form-input" placeholder="Address:">
+            <input type="text" id="address" class="form-input" placeholder="Address:" onkeyup="validate();">
+            <div id="errAddress"></div>
 
             <label for="type" class="form-label">Type of Cuisine</label>
-            <input type="text" id="type" class="form-input" placeholder="Type of Cuisine:">
+            <input type="text" id="type" class="form-input" placeholder="Type of Cuisine:" onkeyup="validate();">
+            <div id="errType"></div>
 
             <label for="review" class="form-label">Review</label>
-            <textarea id="review" class="form-textarea" placeholder="Review"></textarea>
+            <textarea id="review" class="form-textarea" placeholder="Review" onkeyup="validate();"></textarea>
+            <div id="errReview"></div>
             
-            <input type="submit" class="btn-submit" value="SUBMIT" >
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <input type="submit"  id="submit" value="SUBMIT" class="btn-submit" onclick= " validate(); finalValidate();">
+            <!--<div id="errFinal"></div>-->
 
 
 
         </form>
+    
+        <script src="validation.js"></script>
 
+ </div>
+ 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </div>
     
 </body>
 </html>
