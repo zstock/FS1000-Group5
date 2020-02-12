@@ -23,8 +23,31 @@
             
             <input type="submit" class="btn-submit" id="loginSubmit" value="LOGIN"></input>
         </form>
-        <div class="form" id="adminPanel">
 
+        <div class="form hideOnStart" id="adminPanel">
+            <div class="form-header">
+                <h1 class="form-title">A<span>dmin Panel</span></h1>
+            </div>
+            <h2>Pending Reviews</h2>
+            <br>
+            <button class="reviewButton" value=0>Robo Sushi</button>
+            <button class="reviewButton" value=1>Bar Raval</button>
+            <button class="reviewButton" value=2>Famiglia</button>
+        </div>
+    </div>
+    <div class="reviewOverlay" id="reviewOverlay">
+        <div class="title">
+            <h1 id="restaurantName">test</h1>
+            <h2 id="restaurantRating">Rating: <span>&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;</span></h2>
+        </div>
+        <div class="reviewContent">
+            <h2>About</h2>
+            <p id="restaurantInfo">This is some testing text!</p>
+        </div>
+        <br>
+        <div class="reviewControl">
+            <button class="adminButton" id="approveSubmission">Approve!</button>
+            <button class="adminButton" id="rejectSubmission">Reject</button>
         </div>
     </div>
 </body>
