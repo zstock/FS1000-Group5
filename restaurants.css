@@ -1,0 +1,65 @@
+.container{
+    width: 900px;
+ }
+
+.left{
+    width: 230px;
+    float:left;
+    position:relative;
+    margin-left: 10px;
+    margin-top: 15px;
+ }
+
+.right{
+    float:right;
+    width: 650px;
+}
+
+.indian, .chinese, .mexican, .allrest{
+    width: 100%;
+    font-size: 25px;
+    background-image: linear-gradient(to bottom right, #cc3d3f, #66232c);
+    color: #ededed;
+}
+
+.divider{
+    height: 5px; 
+ }
+
+#panel, #panel, #panel {
+    float:left;
+    position: relative;
+    z-index: 10;
+    width: 300px;
+    padding: 5px;
+    
+}
+
+#paneltext, #paneltext, #paneltext {
+    width:300px;
+    font-size: 24px;
+    text-align: center;
+    color: #ededed;
+    position: absolute;
+    z-index: 51;
+    bottom:25px;
+    background-color: rgba(49,49,49, 0.8);
+}
+
+.allrestaurants{
+    position: absolute;
+    opacity: 1;
+}
+
+.rest1, .rest2, .rest3{
+    position: absolute;
+    opacity: 0.0;
+}
+
+img{
+    filter: drop-shadow(5px 5px 5px #222);
+}
+
+
+
+
