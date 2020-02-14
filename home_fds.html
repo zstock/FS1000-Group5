@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="hole in a 6ix, a comprehensive restaurant review website">
+    <meta name="keywords" content="hole in a 6ix is a website on which reviews can be posted about restuarants, food, and catering services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole in a 6ix</title>
+  <script src="https://kit.fontawesome.com/30e4b16968.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="home_fds.css"/>
+<script>
+        const name = document.getElementById('firstName');
+        const label1 = document.getElementById('firstNameLabel');
+        const lastName = document.getElementById('lastName');
+        const label2 = document.getElementById('lastNameLabel');
+        const email = document.getElementById('email');
+        const label3 = document.getElementById('emailLabel');
+        const compName = document.getElementById('compName');
+        const label4 = document.getElementById('compNameLabel');
+
+
+
+        const trackName = function (){
+          console.log(name.value);
+          if(name.value !== ""){
+            label1.classList.add("activeInput")
+          }
+        };
+
+        const trackLastName = function (){
+          console.log(lastName.value);
+          if(lastName.value !== ""){
+            label2.classList.add("activeInput")
+          }
+        };
+</script>
+
+</head>
+
+<body>
+<div class="container">
+    <h1>Hole in a 6ix</h1>
+  
+    <div class="gallery-wrap">
+      <div class="item item-1"></div>
+      <div class="item item-2"></div>
+      <div class="item item-3"></div>
+      <div class="item item-4"></div>
+      <div class="item item-5"></div>
+    </div>
+   </div>
+
+   <div class="wrapper">
+    <h1 class="form">Submit a review</h1>
+    <form action="submit">
+      <fieldset class="fullName">
+        
+        <input onKeyDown=trackName() id="firstName" name="firstName"type="text" required>
+        <label for="firstName" >
+          <span id="firstNameLabel" class="contentName">First Name</span>
+        </label>
+        
+        <input onKeyDown=trackLastName() id="lastName" name="lastName" type="text" required>
+        <label for="lastName">
+          <span id="lastNameLabel" class="contentName">Last Name</span>
+        </label>
+      </fieldset>
+      <fieldset>
+         
+        <input onKeyDown=trackEmail() id="email" name="email" type="email" required>
+        <label for="email">
+          <span id="emailLabel" class="contentName">Email Address</span>
+        </label>
+        <input onKeyDown=trackCompName() id="compName" name="compNmae" type="text" required>
+        <label for="compName">
+          <span id="compNameLabel" class="contentName">Company Name</span>
+        </label>
+      </fieldset>
+      <label class="visuallyhidden" for="message">Message</label>
+      <input name="message" placeholder="Comments" type="text" required>
+      <a onClick="handleClick()" href="#">SEND</a>
+    </form>
+  </div>
+
+
+
+  </body>
+  </html>

@@ -1,0 +1,138 @@
+.clearfix {
+  overflow: hidden;
+}
+
+/*.clearfix:after 
+{
+    visibility: hidden; 
+    display: block; 
+    font-size: 0; 
+    content:''; 
+    clear: both; 
+    height: 0; 
+} 
+
+
+ * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.visuallyHidden:not(:focus):not(:active) 
+{ 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(00 0 0);
+    overflow: hidden;
+}*/
+
+body {
+  margin: 0 auto;
+}
+
+header {
+    background-color: #ededed;    
+    padding: 20px;   
+}
+
+.logo{
+  display: inline-block;
+  overflow: hidden;
+}
+
+i{
+  font-size:1.5rem;
+}
+
+nav{
+  float:right;
+}
+
+nav li {
+    list-style: none;
+    float: left;
+    margin-left: 50px;
+}
+
+nav a {
+   text-transform: uppercase;
+    text-decoration: none;
+    color: #313131;
+     font-size: 1rem;
+    padding: 10px;
+ }
+
+nav a:hover {
+  color: #66232c;
+}
+
+.wrapper{
+  max-width: 80%;
+  margin: 0 auto;
+  max-width:1224px;
+}
+
+.heroimage {
+  width: 100%;
+  height: 75vh;
+  background: #f0c030;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background: #ededed;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.responsive-menu
+{
+    display:none;
+}
+
+.show
+{
+    display:inline-block;
+}
+
+@media screen and (max-width:900px){
+  .responsive-menu
+  {
+    display:inline-block;
+  }
+  
+  header{
+    position: relative;
+  }
+  nav{
+    position: absolute;
+    bottom: -128px;
+    right: 0px;
+    left: 0px;
+    
+  }
+  li{
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding:10px 0px;
+    text-align: center;
+    background:#fff;
+  }
+  
+  li:hover{
+    background: coral;
+  }
+  a{
+    padding: 10px 43%;
+  }
+  .show
+  {
+    display: none;
+  }
+}
