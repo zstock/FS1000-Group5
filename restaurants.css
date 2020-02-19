@@ -1,3 +1,8 @@
+ body {
+     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(images/background.jpg);
+     margin: 0;
+     padding: 0;
+ }
 .container{
     width: 900px;
  }
@@ -20,6 +25,7 @@
     font-size: 25px;
     background-image: linear-gradient(to bottom right, #cc3d3f, #66232c);
     color: #ededed;
+    font-family: Roboto;
 }
 
 .divider{
@@ -44,6 +50,7 @@
     z-index: 51;
     bottom:25px;
     background-color: rgba(49,49,49, 0.8);
+    font-family: 'Roboto';
 }
 
 .allrest{

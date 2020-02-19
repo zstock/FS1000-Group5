@@ -1,35 +1,32 @@
-html {
-    width: 100%;
-    height: 100%;
-  }
-
 body {
-    width: 100%;
-    height: 100%;
-    background: #ededed;
-  }
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(images/background.jpg);
+  margin: 0;
+}
   
-  .container {
-    padding: 75px 0;
-    margin: 0 auto;
-    width: 1140px;
-  }
+.container {
+  /*padding: 50px 0;*/
+  margin: 30px auto;
+  width: 1140px;
+  display:block;
+}
   
-  h1 {
-    position: relative;
-    margin-bottom: 45px;
-    font-family: 'roboto', sans-serif;
-    font-size: 44px;
-    text-transform: uppercase;
-    color: #424242;
-  }
+h1 {
+  position: relative;
+  margin-bottom: 45px;
+  font-family: 'roboto', sans-serif;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: #424242;
+}
   
-  .gallery-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 70vh;
-  }
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
   
   .item {
     flex: 1;
@@ -75,7 +72,7 @@ body {
   .wrapper{
     width: 80%;
     margin: 0 auto;
-
+    display:none;
   }
   form{
     width: 100%;
@@ -107,7 +104,7 @@ body {
     border: none;
   }
   
-  a{
+  .container a{
     color: #fff;
     border: none;
     background: #66232c;

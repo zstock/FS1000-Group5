@@ -6,7 +6,7 @@
    box-sizing: border-box;
 }
 body {
-    background: url(https://lov.com/workspace/uploads/modules/lovmcgill-en-1567695807.jpg);
+    background: url(images/background.jpg);
     -webkit-background-size: cover;
     background-size: cover ;
     background-attachment: fixed;

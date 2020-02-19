@@ -1,54 +1,28 @@
-.clearfix {
-  overflow: hidden;
-}
-
-/*.clearfix:after 
-{
-    visibility: hidden; 
-    display: block; 
-    font-size: 0; 
-    content:''; 
-    clear: both; 
-    height: 0; 
-} 
-
-
- * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-.visuallyHidden:not(:focus):not(:active) 
-{ 
-    position: absolute; 
-    width: 1px; 
-    height: 1px; 
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(00 0 0);
-    overflow: hidden;
-}*/
-
-body {
-  margin: 0 auto;
-}
-
-header {
-    background-color: #ededed;    
-    padding: 20px;   
+.header {
+    background-color: #f0c030;    
+    height: 80px;
+    width: 100%;
+    position: relative;
 }
 
 .logo{
   display: inline-block;
-  overflow: hidden;
+  height: 70px;
+  width: 115px;
+  margin-left: 20px;
+  filter: drop-shadow(5px 5px 5px #222);
+
 }
 
-i{
-  font-size:1.5rem;
-}
 
 nav{
   float:right;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 nav li {
@@ -61,33 +35,23 @@ nav a {
    text-transform: uppercase;
     text-decoration: none;
     color: #313131;
-     font-size: 1rem;
+    font-size: 1rem;
     padding: 10px;
+    font-family: Roboto;
+
  }
 
 nav a:hover {
   color: #66232c;
 }
 
-.wrapper{
-  max-width: 80%;
-  margin: 0 auto;
-  max-width:1224px;
-}
-
-.heroimage {
-  width: 100%;
-  height: 75vh;
-  background: #f0c030;
-  text-align: center;
-}
-
 .footer {
   width: 100%;
-  height: 70px;
-  background: #ededed;
+  height: 25px;
+  background: #f0c030;
   text-align: center;
   padding: 10px 0px;
+  bottom: 0;
 }
 
 .responsive-menu
@@ -98,41 +62,4 @@ nav a:hover {
 .show
 {
     display:inline-block;
-}
-
-@media screen and (max-width:900px){
-  .responsive-menu
-  {
-    display:inline-block;
-  }
-  
-  header{
-    position: relative;
-  }
-  nav{
-    position: absolute;
-    bottom: -128px;
-    right: 0px;
-    left: 0px;
-    
-  }
-  li{
-    float: none;
-    width: 100%;
-    margin: 0;
-    padding:10px 0px;
-    text-align: center;
-    background:#fff;
-  }
-  
-  li:hover{
-    background: coral;
-  }
-  a{
-    padding: 10px 43%;
-  }
-  .show
-  {
-    display: none;
-  }
 }

@@ -1,33 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+ }
+ body {
+     background: url(images/background.jpg);
+     -webkit-background-size: cover;
+     background-size: cover ;
+     background-attachment: fixed;
+ 
+ }
+
 img{
     height: 160px;
     width: 160px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family:sans-serif;
-}
-
-
 .team-section{
     overflow: hidden;
     text-align: center;
-    background: url(https://lov.com/workspace/uploads/modules/lovmcgill-en-1567695807.jpg);
-    -webkit-background-size: cover;
-    background-size: cover ;
-    background-attachment: fixed;
-    padding: 60px;
-    
+    padding: 40px;
 }
 
 .team-section h1{
     text-transform: uppercase;
     margin-bottom:20px ;
-    color: #f0c030;
+    color: #66232c;
     font-size: 50px;
-    
-    
+    font-family: 'Roboto';    
 }
 .border{
     display: block;
@@ -47,8 +49,7 @@ img{
     width: 150px;
     height: 150px;
     overflow: hidden;
-    /*border: radius 50px;*/
-
+    font-family: 'Roboto';
 }
 .ps a img{
     width: 100%;
@@ -63,10 +64,12 @@ img{
     margin: auto;
     font-size: 30px;
     color:#fff;
-    text-align: justify;
+    text-align: center;
     height: 0;
     overflow: hidden;
-    
+    background: rgb(0,0,0,.6);
+    border-radius: 3px;
+    font-family: 'Roboto';
 }
 .section:target{
     height: auto;
@@ -77,5 +80,5 @@ img{
     text-align: center;
     text-transform: uppercase;
     font-size: 40px;
-    color: #66232c;
+    color: #f0c030;
 }
