@@ -246,7 +246,9 @@ body {
     margin-bottom:20px ;
     color: #66232c;
     font-size: 50px;
-    font-family: 'Roboto';    
+    font-family: 'Roboto'; 
+    text-shadow: 0 0 15px white;	
+	
 }
 .border{
     display: block;
