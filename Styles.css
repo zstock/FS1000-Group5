@@ -141,7 +141,7 @@ body {
     }
     
     .item-2 { 
-      background-image: url('../FS1000-Group5/images/famiglia-baldassarre.jpeg');
+      background-image: url('../FS1000-Group5/images/mustafa.jpg');
     }
     
     .item-3 { 
@@ -149,13 +149,19 @@ body {
     }
     
     .item-4 { 
-      background-image: url('../FS1000-Group5/images/fishman-lobster-clubhouse.jpg');
+      background-image: url('../FS1000-Group5/images/gusto-501.jpg');
     }
     
     .item-5 { 
       background-image: url('../FS1000-Group5/images/bar-raval.jpg');
     }
     
+    .gallery-wrap p{
+      color: #ffffff;
+      margin-top: 100%;
+      font-size: 2em;
+      text-align: center;
+    }
   
     .visuallyhidden { 
       position: absolute; 
@@ -164,7 +170,26 @@ body {
       height: 1px; width: 1px; 
       margin: -1px; padding: 0; border: 0; 
     }
-    
+
+    .wrapper-about{
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 5%;
+      margin-bottom: 5%;
+    }
+
+    .wrapper-about h1 {
+      color: #fff;
+      margin-bottom: 45px;
+      padding-top: 80px;
+      text-align: center;
+    }
+    .wrapper-about p {
+      color: #fff;
+      text-align: justify;
+      text-align: center;
+    }
+
     .wrapper{
       width: 80%;
       margin: 0 auto;
