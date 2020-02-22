@@ -97,161 +97,125 @@ font-family: Roboto;
 body {
     width: 100%;
     height: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(images/background.jpg);
+    background: #f0c030;;
     margin: 0;
   }
-    
-  .container_home {
-    /*padding: 50px 0;*/
-    margin: 30px auto;
-    width: 1140px;
-    display:block;
-  }
-    
-  .wrapper h1 {
-    position: relative;
-    margin-bottom: 45px;
-    font-family: 'roboto', sans-serif;
-    font-size: 44px;
-    text-transform: uppercase;
-    color: #424242;
-  }
-    
-  .gallery-wrap {
-    display: flex;
-    flex-direction: row;
+
+  body.home {
     width: 100%;
-    height: 70vh;
-  }
-    
-    .item {
-      flex: 1;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-repeat: none;
-      transition: flex 0.8s ease;
-    }
-    .item:hover {
-      flex: 7;
-    }
-    
-    .item-1 { 
-      background-image: url('../FS1000-Group5/images/360-restaurant.jpg')
-    }
-    
-    .item-2 { 
-      background-image: url('../FS1000-Group5/images/mustafa.jpg');
-    }
-    
-    .item-3 { 
-      background-image: url('../FS1000-Group5/images/onoir.jpg');
-    }
-    
-    .item-4 { 
-      background-image: url('../FS1000-Group5/images/gusto-501.jpg');
-    }
-    
-    .item-5 { 
-      background-image: url('../FS1000-Group5/images/bar-raval.jpg');
-    }
-    
-    .gallery-wrap p{
-      color: #ffffff;
-      margin-top: 100%;
-      font-size: 2em;
-      text-align: center;
-    }
-  
-    .visuallyhidden { 
-      position: absolute; 
-      overflow: hidden; 
-      clip: rect(0 0 0 0); 
-      height: 1px; width: 1px; 
-      margin: -1px; padding: 0; border: 0; 
-    }
+    height: 100%;
+    background: #f0c030;
+    margin: 0;
+  }  
 
-    .wrapper-about{
-      width: 80%;
-      margin: 0 auto;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
+      /*Carousel starts here*/
+          * {box-sizing: border-box;}
+          .mySlides {display: none;}
+          img {vertical-align: middle;}
+          
+          /* Banner heading */
+          .banner-top{
+          position: relative;
+          margin-bottom: 45px;
+          color: #66232c;
+          text-align: center;
+          margin-top: 5%;
+          margin-bottom: 5%;
+          text-transform: uppercase;
+          font-size: 40px;
+          font-family: 'Roboto'; 
+          text-shadow: 0 0 15px white;	
+        }
 
-    .wrapper-about h1 {
-      color: #fff;
-      margin-bottom: 45px;
-      padding-top: 80px;
-      text-align: center;
-    }
-    .wrapper-about p {
-      color: #fff;
-      text-align: justify;
-      text-align: center;
-    }
+        /* Slideshow container */
+        .slideshow-container {
+          position: relative;
+          margin: auto;
+        }
 
-    .wrapper{
-      width: 80%;
-      margin: 0 auto;
-      display:none;
-    }
-    .wrapper form{
-      width: 100%;
-      text-align: center;
-    }
-    .wrapper form input[type="email"],
-    .wrapper form input[type="text"]{
-      width: 100%;
-      height: 40px;
-      margin-bottom: 20px;
-      padding-left:10px;
-      text-transform: capitalize;
-      border: none;
-    }
-    
-    fieldset{
-      width: 48%;
-      float: left;
-      margin: 0px;
-      padding: 0px;
-      text-align: left;
-    }
-    
-    .fullName{
-      margin-right: 4%;
-    }
-    
-    .wrapper fieldset, input[type="text"]{
-      border: none;
-    }
-    
-    .container_home a{
-      color: #fff;
-      border: none;
-      background: #66232c;
-      padding: 5px 10px;
-      text-decoration : none;
-      
-    }
-    
-    
-    .wrapper label, .wrapper span{
-      position: relative;
-    }
-    
-    .wrapper span{
-      top: -50px;
-      left: 10px;
-    }
-    
-    .activeInput,
-    input[type="email"]:hover +label > span,
-    input[type="email"]:focus +label > span,
-    input[type="text"]:hover +label > span,
-    input[type="text"]:focus +label > span{
-      top: -90px;
-      left: 0px;
-    }
+        /* Image Opacity */
+        .slideshow-container img {
+          background: #cc3d3f;
+          opacity: 0.7;
+        }
+        .slideshow-container img:hover {
+              opacity: 1.0;
+            }
+
+
+        /* Caption text */
+        .text {
+          color: #fff;
+          padding: 8px 12px;
+          position: absolute;
+          bottom: 40px;
+          width: 100%;
+          text-align: center;
+          font-family: 'roboto', sans-serif;
+          font-size: 5em;
+          text-transform: uppercase;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #66232c;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+
+        .active {
+          background-color: #ededed;
+        }
+
+        /* Fading animation */
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+        }
+
+
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+          .text {font-size: 11px}
+        }
+      /*Carousel ends here*/
+
+        /*About Hole in the 6ix*/
+          .wrapper{
+            width: 80%;
+            margin: 0 auto;
+            display:none;
+          }
+            .wrapper-about{
+              width: 80%;
+              margin: 0 auto;
+              margin-top: 5%;
+              margin-bottom: 5%;
+            }
+            .wrapper-about h1 {
+              position: relative;
+              margin-bottom: 5%;
+              color: #424242;
+              text-align: center;
+              margin-top: 5%;
+            }
+
+            .wrapper-about p {
+              color: #fff;
+              text-align: center;
+              font-size: 1.5em;
+              width: 60%;
+              margin-left: 20%;
+              margin-right: 20%;
+            }
+
 
 /*About==================================*/
 
@@ -326,8 +290,53 @@ body {
     font-size: 40px;
     color: #f0c030;
 }
+.valueheading {
+  position: relative;
+  margin-bottom: 45px;
+  color: #424242;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.valuep {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.value-1 {
+  width: 33%;
+  float: left;
+}
+
+.value-2 {
+  width: 33%;
+  float: right;
+}
+
+.value-3 {
+  width: 33%;
+  float: right;
+}
+
+.space {
+  margin-top:10%;
+}
 
 /*Restaurants================*/
+
+.restaurant-wrapper{
+    width: 80%;
+    max-width: 1024px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 60px;
+}
+
 .container_res{
   width: 900px;
 }
@@ -363,7 +372,9 @@ body {
   z-index: 10;
   width: 300px;
   padding: 5px;
-  
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 #paneltext, #paneltext, #paneltext {
@@ -546,4 +557,221 @@ bottom: 0;
 .show
 {
   display:inline-block;
+}
+
+/*Restaurants Individual Pages================*/
+
+.dark {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient( rgba(255, 254, 254, 0.7), rgba(255, 254, 254, 0.7) ), url(images/background.jpg);
+  margin: 0;
+}
+
+.first {
+  width: 50%;
+  float: left;
+}
+        /*Gusto*/
+
+        .restaurant-banner-gusto501 img {
+          display:block }
+
+        .restaurant-banner-gusto501 {
+          background-image:url("images/gusto-501.jpg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+        .restaurant-banner-gusto501 h1 {
+          color:#ffffff;
+          font-size: 5em;
+        }
+
+        /*Robo Sushi*/
+
+      .restaurant-banner-robosushi img {
+        display:block;
+        opacity: 0.7;
+      }
+
+      .restaurant-banner-robosushi {
+          background-image: url("images/robo-sushi.jpg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+      .restaurant-banner-robosushi h1 {
+        color: #ffffff;
+        font-size: 5em;
+      }
+
+        /*ONOIR*/
+        .restaurant-banner-onoir img {
+          display:block }
+
+        .restaurant-banner-onoir {
+            background-image: url("images/onoir.jpg");
+            width: 100%;
+            padding-top: 160px;
+            padding-bottom: 160px;
+          }
+
+        .restaurant-banner-onoir h1 {
+          color: #313131;
+          font-size: 5em;
+        }
+
+      /*Mustafa*/
+      .restaurant-banner-mustafa img {
+        display:block }
+
+      .restaurant-banner-mustafa {
+          background-image: url("images/mustafa.jpg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+      .restaurant-banner-mustafa h1 {
+        color: #ffffff;
+        font-size: 5em;
+      }
+
+      /*Fisherman*/
+      .restaurant-banner-fisherman img {
+        display:block }
+
+      .restaurant-banner-fisherman {
+          background-image: url("images/fishman-lobster-clubhouse.jpg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+      .restaurant-banner-fisherman h1 {
+        color:#ffffff;
+        font-size: 5em;
+      }
+
+      /*Bar Raval*/
+      .restaurant-banner-barraval img {
+        display:block }
+
+      .restaurant-banner-barraval {
+          background-image: url("images/bar-raval.jpg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+      .restaurant-banner-barraval h1 {
+        font-size: 5em;
+        color:#ffffff;
+      }
+
+      /*Famiglia*/
+      .restaurant-banner-famiglia img {
+        display:block }
+
+      .restaurant-banner-famiglia {
+          background-image: url("../FS1000-Group5/images/famiglia-baldassarre.jpeg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+      .restaurant-banner-famiglia h1 {
+        font-size: 5em;
+        color:#ffffff;
+      }
+
+      /*360*/
+      .restaurant-banner-360 img {
+        display:block }
+
+      .restaurant-banner-360 {
+          background-image: url("images/360-restaurant.jpg");
+          width: 100%;
+          padding-top: 160px;
+          padding-bottom: 160px;
+        }
+
+      .restaurant-banner-360 h1 {
+        font-size: 5em;
+        color:#ffffff;
+      }
+
+.image-block {
+  width: 100%;
+  height: 70px;
+  background: #f0c030;
+  margin-bottom:60px;
+}
+
+.image-block {
+  text-align: center;
+}
+.second {
+  width: 50%;
+  float: right;
+}
+
+.column-container-2 {
+  max-width:1024px; margin:0 auto;
+}
+
+.restaurant-paragraph {
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.restaurant-paragraph-2 {
+  padding-bottom: 20px;
+  padding-left: 40px;
+}
+.second h2 {
+  padding-left: 40px
+}
+.columnheading {
+  padding-top:30px; 
+  padding-bottom:20px;
+}
+.imageheading {
+  text-align: center
+}
+.first {
+  border-top:#666666 solid 1px;
+  border-bottom:#666666 solid 1px;
+}
+
+.restaurant-banner {
+   background-color: rgba(0,0,0,40)
+}
+
+.clearfix {
+  clear: both;
+}
+
+.restaurant-map {  
+  text-align: center;
+  margin-left: 5%;
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+iframe {
+  width: 1000px;
+  height: 450px;
+}
+
+.rating {
+  margin-top: 0px;
+}
+
+.stars p {
+  color: #66232c;
 }

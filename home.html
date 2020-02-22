@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="hole in a 6ix, a comprehensive restaurant review website">
+    <meta name="keywords" content="hole in a 6ix is a website on which reviews can be posted about restuarants, food, and catering services.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hole in the 6ix</title>
+    <script src="https://kit.fontawesome.com/30e4b16968.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="Styles.css"/>
+
+</head>
+
+<body class="home">
+    <!--Nav starts here--> 
+      <div class="header">
+        <a href="home.html"><img class="logo" src="images/logo.png" alt="Hole in the Six logo"></a> 
+        <nav> 
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="restaurants.html">Restaurants</a></li>
+          <li><a href="Contact P.html">Submit</a></li> 
+          <li><a href="Admin.html">Login</a></li>              
+        </nav>
+      </div>
+    <!--end nav here--> 
+
+    <!--Carosel starts here--> 
+    <h1 class="banner-top">Featured Restaurants of the Month</h1>  
+    <span class="border"></span>  
+    <div class="slideshow-container">
+    
+        <div class="mySlides fade">
+          <a href="gusto-501.html" target="_blank">
+            <img src="images/gusto-501.jpg" style="width:100%">
+          </a>
+          <a href="gusto-501.html" target="_blank">
+             <div class="text">Gusto 501</div>
+          </a>
+        </div>
+        
+        <div class="mySlides fade">
+          <a href="mustafa.html" target="_blank">
+            <img src="images/mustafa.jpg" style="width:100%">
+          </a>
+          <div class="text">Mustafa</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <a href="onoir.html" target="_blank">
+            <img src="images/onoir.jpg" style="width:100%">
+          </a>
+          <div class="text">ONOIR</div>
+        </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+  
+    <!--end carosel here--> 
+
+
+    <!--About company starts here--> 
+      <div  class="wrapper-about">
+        <h1>About Hole in the 6ix</h1>
+        <p>Hole in the 6ix is review forum covering restaurants in Toronto GTA. It’s a highly-regarded restaurant review site where anyone can post a review.</p>
+        <h1>How does Hole in the 6ix come up with its own ratings?</h1>
+        <p>Your customers can visit the site to vote in a featured survey. They are asked to rate restaurants on food, décor and service on a 0-3 scale. They are asked to provide comments as well. The ratings are averaged and presented on a 30-point scale.The Hole in the 6ix editors also post restaurant reviews that include a mix of comments from user reviews.</p>
+      </div>
+    <!--end about company starts here--> 
+
+    </body>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+
+  </html>

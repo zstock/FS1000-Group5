@@ -158,9 +158,13 @@ body {
 .second h2 {
   padding-left: 40px
 }
-h2 {padding-top:30px; padding-bottom:20px;}
 
-h1 {
+.columnheading {
+  padding-top:30px; 
+  padding-bottom:20px;
+}
+
+.imageheading {
   text-align: center
 }
 .first {
